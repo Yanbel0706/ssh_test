@@ -16,7 +16,8 @@ extern char **environ;
 char **parse_path(void);
 char *resolve_path(char *cmd, char **dirs);
 char *prompt(void);
-int command_exec(char **args, char **path_array,  char *prog_name, int cmd_cpt);
+int command_exec(char **args, char **path_array,
+				char *prog_name, int cmd_cpt);
 char **split_cmd(char *cmd);
 char *my_strdup(const char *s);
 char **rep_st_arg(char **args, const char *f_path);
