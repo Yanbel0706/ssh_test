@@ -8,16 +8,14 @@ void print_env(char **env)
 {
 int n;
 
-   if (env == NULL) 
-     {
-        fprintf(stderr, "Error: Environment variable is NULL.\n");
-        return;
-     }
+	if (env == NULL)
+	{
+		fprintf(stderr, "Error: Environment variable is NULL.\n");
+		return;
+	}
 
-   for (n = 0; env[n] != NULL; n++)
-     { 
-	printf("%s\n", env[n]);
-     }
-     
-     
+	for (n = 0; env[n] != NULL; n++)
+	{
+		printf("%s\n", env[n]);
+	}
 }
